@@ -1,0 +1,7 @@
+// This is a sass variable definition
+$primaryColor: blue;
+
+h1{
+    //This is a sass variable in use
+    color: $primaryColor;
+}
