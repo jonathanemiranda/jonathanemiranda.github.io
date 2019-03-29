@@ -1,8 +1,40 @@
 // This is a sass variable definition
-$primaryColor: blue;
+$collegeNavy: #002244;
+$actionGreen: #69BE28;
+$wolfGray: #A5ACAF;
+
+//This is a sass mixin definition
+@mixin defaultTextStyle {
+    font-family: 'Times New Roman';
+    font-size: 24px;
+    text-transform: uppercase;
+}
+
+%defaultBorder{
+    border: solid 3px $actionGreen;
+}
+
+@import "partial";
+
+body{
+    background-color: $collegeNavy;
+    //This is a sass mixin in use
+    @include defaultTextStyle();
+}
 
 h1{
     //This is a sass variable in use
-    color: $primaryColor;
+    color: $wolfGray;
     text-align: center;
+    @extend %defaultBorder;
+}
+
+//Here is an example of sass nesting
+footer{
+    p{
+        text-align: left;
+    }
+    div{
+        text-align: center;
+    }
 }

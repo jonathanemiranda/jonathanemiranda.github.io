@@ -1,5 +1,29 @@
 h1 {
-  color: blue;
+  border: solid 3px #69BE28;
+}
+
+html {
+  padding: 0;
+  margin: 0;
+  color: #A5ACAF;
+}
+
+body {
+  background-color: #002244;
+  font-family: "Times New Roman";
+  font-size: 24px;
+  text-transform: uppercase;
+}
+
+h1 {
+  color: #A5ACAF;
+  text-align: center;
+}
+
+footer p {
+  text-align: left;
+}
+footer div {
   text-align: center;
 }
 
